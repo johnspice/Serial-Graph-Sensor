@@ -1,0 +1,123 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="LabCOF.Properties" GeneratedClassName="Graficos">
+  <Profiles />
+  <Settings>
+    <Setting Name="E0activo" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="E0name" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Entrada 0</Value>
+    </Setting>
+    <Setting Name="E0x" Type="System.String" Scope="User">
+      <Value Profile="(Default)">tiempo</Value>
+    </Setting>
+    <Setting Name="E0y" Type="System.String" Scope="User">
+      <Value Profile="(Default)">E0</Value>
+    </Setting>
+    <Setting Name="E0mostrar" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Y1</Value>
+    </Setting>
+    <Setting Name="E0color" Type="System.Drawing.Color" Scope="User">
+      <Value Profile="(Default)">Red</Value>
+    </Setting>
+    <Setting Name="E1activo" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="E1name" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Entrada 1</Value>
+    </Setting>
+    <Setting Name="E1x" Type="System.String" Scope="User">
+      <Value Profile="(Default)">tiempo</Value>
+    </Setting>
+    <Setting Name="E1y" Type="System.String" Scope="User">
+      <Value Profile="(Default)">E1</Value>
+    </Setting>
+    <Setting Name="E1mostrar" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Y1</Value>
+    </Setting>
+    <Setting Name="E1color" Type="System.Drawing.Color" Scope="User">
+      <Value Profile="(Default)">Yellow</Value>
+    </Setting>
+    <Setting Name="E2activo" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="E2name" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Entrada 2</Value>
+    </Setting>
+    <Setting Name="E2x" Type="System.String" Scope="User">
+      <Value Profile="(Default)">tiempo</Value>
+    </Setting>
+    <Setting Name="E2y" Type="System.String" Scope="User">
+      <Value Profile="(Default)">E2</Value>
+    </Setting>
+    <Setting Name="E2mostrar" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Y1</Value>
+    </Setting>
+    <Setting Name="E2color" Type="System.Drawing.Color" Scope="User">
+      <Value Profile="(Default)">Lime</Value>
+    </Setting>
+    <Setting Name="E3activo" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="E3name" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Entrada 3</Value>
+    </Setting>
+    <Setting Name="E3x" Type="System.String" Scope="User">
+      <Value Profile="(Default)">tiempo</Value>
+    </Setting>
+    <Setting Name="E3y" Type="System.String" Scope="User">
+      <Value Profile="(Default)">E3</Value>
+    </Setting>
+    <Setting Name="E3mostrar" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Y1</Value>
+    </Setting>
+    <Setting Name="E3color" Type="System.Drawing.Color" Scope="User">
+      <Value Profile="(Default)">Aqua</Value>
+    </Setting>
+    <Setting Name="E4activo" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="E4name" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Entrada 4</Value>
+    </Setting>
+    <Setting Name="E4x" Type="System.String" Scope="User">
+      <Value Profile="(Default)">tiempo</Value>
+    </Setting>
+    <Setting Name="E4y" Type="System.String" Scope="User">
+      <Value Profile="(Default)">E4</Value>
+    </Setting>
+    <Setting Name="E4mostrar" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Y1</Value>
+    </Setting>
+    <Setting Name="E4color" Type="System.Drawing.Color" Scope="User">
+      <Value Profile="(Default)">Blue</Value>
+    </Setting>
+    <Setting Name="E5activo" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="E5name" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Entrada 5</Value>
+    </Setting>
+    <Setting Name="E5x" Type="System.String" Scope="User">
+      <Value Profile="(Default)">tiempo</Value>
+    </Setting>
+    <Setting Name="E5y" Type="System.String" Scope="User">
+      <Value Profile="(Default)">E5</Value>
+    </Setting>
+    <Setting Name="E5mostrar" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Y1</Value>
+    </Setting>
+    <Setting Name="E5color" Type="System.Drawing.Color" Scope="User">
+      <Value Profile="(Default)">Fuchsia</Value>
+    </Setting>
+    <Setting Name="Panel2Activo" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="ActivoY2panel1" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="ActivoY2panel2" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

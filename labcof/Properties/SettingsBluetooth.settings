@@ -1,0 +1,39 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="LabCOF.Properties" GeneratedClassName="SettingsBluetooth">
+  <Profiles />
+  <Settings>
+    <Setting Name="TimeRcepcion" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">1000</Value>
+    </Setting>
+    <Setting Name="DatoTiempo" Type="System.Double" Scope="User">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+    <Setting Name="EjeX" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+    <Setting Name="EjeY1" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">1</Value>
+    </Setting>
+    <Setting Name="EjeY2" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">7</Value>
+    </Setting>
+    <Setting Name="NumDatos" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">9999</Value>
+    </Setting>
+    <Setting Name="DatoEnviado0" Type="System.Byte" Scope="User">
+      <Value Profile="(Default)">84</Value>
+    </Setting>
+    <Setting Name="DatoEnviadoHi" Type="System.Byte" Scope="User">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+    <Setting Name="DatoEnviadoLow" Type="System.Byte" Scope="User">
+      <Value Profile="(Default)">65</Value>
+    </Setting>
+    <Setting Name="dGVtablaD1" Type="System.String" Scope="User">
+      <Value Profile="(Default)">E0</Value>
+    </Setting>
+    <Setting Name="dGVtablaD2" Type="System.String" Scope="User">
+      <Value Profile="(Default)">E1</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

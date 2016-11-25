@@ -1,0 +1,117 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="LabCOF.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="NombrePuerto" Type="System.String" Scope="User">
+      <Value Profile="(Default)">COM3</Value>
+    </Setting>
+    <Setting Name="fon1Col1" Type="System.Drawing.Color" Scope="User">
+      <Value Profile="(Default)">Black</Value>
+    </Setting>
+    <Setting Name="fon1Col2" Type="System.Drawing.Color" Scope="User">
+      <Value Profile="(Default)">Black</Value>
+    </Setting>
+    <Setting Name="fon2Col1" Type="System.Drawing.Color" Scope="User">
+      <Value Profile="(Default)">30, 30, 30</Value>
+    </Setting>
+    <Setting Name="fon2Col2" Type="System.Drawing.Color" Scope="User">
+      <Value Profile="(Default)">30, 30, 30</Value>
+    </Setting>
+    <Setting Name="cuadCol1" Type="System.Drawing.Color" Scope="User">
+      <Value Profile="(Default)">35, 35, 35</Value>
+    </Setting>
+    <Setting Name="cuadCol2" Type="System.Drawing.Color" Scope="User">
+      <Value Profile="(Default)">41, 41, 41</Value>
+    </Setting>
+    <Setting Name="tituloP" Type="System.String" Scope="User">
+      <Value Profile="(Default)">X VS Y</Value>
+    </Setting>
+    <Setting Name="tituloX" Type="System.String" Scope="User">
+      <Value Profile="(Default)">X</Value>
+    </Setting>
+    <Setting Name="tituloY" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Y1</Value>
+    </Setting>
+    <Setting Name="cuadricula" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="TipoDePunto" Type="ZedGraph.SymbolType" Scope="User">
+      <Value Profile="(Default)">Circle</Value>
+    </Setting>
+    <Setting Name="UnirConLinea" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="ColorPunto" Type="System.Drawing.Color" Scope="User">
+      <Value Profile="(Default)">White</Value>
+    </Setting>
+    <Setting Name="sizePunto" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">2</Value>
+    </Setting>
+    <Setting Name="SettingsModificados" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="leyenda" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Serie1</Value>
+    </Setting>
+    <Setting Name="tituloscolor" Type="System.Drawing.Color" Scope="User">
+      <Value Profile="(Default)">White</Value>
+    </Setting>
+    <Setting Name="leyendacolor" Type="System.Drawing.Color" Scope="User">
+      <Value Profile="(Default)">White</Value>
+    </Setting>
+    <Setting Name="leyendacolo1" Type="System.Drawing.Color" Scope="User">
+      <Value Profile="(Default)">Black</Value>
+    </Setting>
+    <Setting Name="maxX" Type="System.Double" Scope="User">
+      <Value Profile="(Default)">100</Value>
+    </Setting>
+    <Setting Name="minX" Type="System.Double" Scope="User">
+      <Value Profile="(Default)">-100</Value>
+    </Setting>
+    <Setting Name="maxY" Type="System.Double" Scope="User">
+      <Value Profile="(Default)">100</Value>
+    </Setting>
+    <Setting Name="minY" Type="System.Double" Scope="User">
+      <Value Profile="(Default)">-100</Value>
+    </Setting>
+    <Setting Name="AutoEsc" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="tituloY2" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Y2</Value>
+    </Setting>
+    <Setting Name="ColorPunto2" Type="System.Drawing.Color" Scope="User">
+      <Value Profile="(Default)">Black</Value>
+    </Setting>
+    <Setting Name="tituloP2" Type="System.String" Scope="User">
+      <Value Profile="(Default)">X VS Y</Value>
+    </Setting>
+    <Setting Name="tituloX2" Type="System.String" Scope="User">
+      <Value Profile="(Default)">X</Value>
+    </Setting>
+    <Setting Name="tituloY22" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Y</Value>
+    </Setting>
+    <Setting Name="titutloY222" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Y2</Value>
+    </Setting>
+    <Setting Name="maxX2" Type="System.Double" Scope="User">
+      <Value Profile="(Default)">100</Value>
+    </Setting>
+    <Setting Name="minX2" Type="System.Double" Scope="User">
+      <Value Profile="(Default)">-10</Value>
+    </Setting>
+    <Setting Name="maxY2" Type="System.Double" Scope="User">
+      <Value Profile="(Default)">100</Value>
+    </Setting>
+    <Setting Name="minY2" Type="System.Double" Scope="User">
+      <Value Profile="(Default)">-100</Value>
+    </Setting>
+    <Setting Name="AutoEsc2" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="ColorejeX" Type="System.Drawing.Color" Scope="User">
+      <Value Profile="(Default)">White</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

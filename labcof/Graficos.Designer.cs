@@ -57,6 +57,7 @@
             this.timer2TiempoReal = new System.Windows.Forms.Timer(this.components);
             this.zedGraphControl2 = new ZedGraph.ZedGraphControl();
             this.textBoxEnvia = new System.Windows.Forms.TextBox();
+            this.guardarDatostxtOdatToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dGVtabla)).BeginInit();
@@ -79,7 +80,8 @@
             // 
             this.toolStripMenuItem1.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.guardarDatosExcelToolStripMenuItem,
-            this.guardarImagenToolStripMenuItem});
+            this.guardarImagenToolStripMenuItem,
+            this.guardarDatostxtOdatToolStripMenuItem});
             this.toolStripMenuItem1.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.toolStripMenuItem1.Name = "toolStripMenuItem1";
             this.toolStripMenuItem1.Size = new System.Drawing.Size(60, 20);
@@ -89,7 +91,7 @@
             // 
             this.guardarDatosExcelToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("guardarDatosExcelToolStripMenuItem.Image")));
             this.guardarDatosExcelToolStripMenuItem.Name = "guardarDatosExcelToolStripMenuItem";
-            this.guardarDatosExcelToolStripMenuItem.Size = new System.Drawing.Size(188, 22);
+            this.guardarDatosExcelToolStripMenuItem.Size = new System.Drawing.Size(203, 22);
             this.guardarDatosExcelToolStripMenuItem.Text = "Guardar Datos (Excel)";
             this.guardarDatosExcelToolStripMenuItem.Click += new System.EventHandler(this.guardarDatosExcelToolStripMenuItem_Click);
             // 
@@ -97,7 +99,7 @@
             // 
             this.guardarImagenToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("guardarImagenToolStripMenuItem.Image")));
             this.guardarImagenToolStripMenuItem.Name = "guardarImagenToolStripMenuItem";
-            this.guardarImagenToolStripMenuItem.Size = new System.Drawing.Size(188, 22);
+            this.guardarImagenToolStripMenuItem.Size = new System.Drawing.Size(203, 22);
             this.guardarImagenToolStripMenuItem.Text = "Guardar Imagen";
             this.guardarImagenToolStripMenuItem.Click += new System.EventHandler(this.guardarImagenToolStripMenuItem_Click);
             // 
@@ -339,6 +341,13 @@
             this.textBoxEnvia.TabIndex = 20;
             this.textBoxEnvia.Text = "a";
             // 
+            // guardarDatostxtOdatToolStripMenuItem
+            // 
+            this.guardarDatostxtOdatToolStripMenuItem.Name = "guardarDatostxtOdatToolStripMenuItem";
+            this.guardarDatostxtOdatToolStripMenuItem.Size = new System.Drawing.Size(203, 22);
+            this.guardarDatostxtOdatToolStripMenuItem.Text = "Guardar Datos .txt o .dat";
+            this.guardarDatostxtOdatToolStripMenuItem.Click += new System.EventHandler(this.guardarDatostxtOdatToolStripMenuItem_Click);
+            // 
             // Graficos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -405,5 +414,6 @@
         private System.Windows.Forms.Timer timer2TiempoReal;
         public  ZedGraph.ZedGraphControl zedGraphControl2;
         private System.Windows.Forms.TextBox textBoxEnvia;
+        private System.Windows.Forms.ToolStripMenuItem guardarDatostxtOdatToolStripMenuItem;
     }
 }

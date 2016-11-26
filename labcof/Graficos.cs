@@ -9,7 +9,7 @@ using System.Windows.Forms;
 
 using System.IO;
 using System.IO.Ports;
-using ZedGraph;
+using ZedGraph;//libreria usada para los paneles de graficado
 
 using System.Threading;
 using Excel = Microsoft.Office.Interop.Excel;
@@ -20,9 +20,9 @@ namespace LabCOF
 {
     public partial class Graficos: Form
     {
-        string E0s,E1s,E2s,E3s,E4s,E5s,E6s,E7s,E8s;
+        string E0s,E1s,E2s,E3s,E4s,E5s,E6s,E7s,E8s; 
         string[] ParteCadenaOptendato;
-        string CadenaRs232;
+        string CadenaRs232;//aqui se guarda la cadena con los datos que envia arduino o algun microcontrolador que envia via serial
         decimal E0D,E1D,E2D,E3D,E4D,E5D,E6D,E7D,E8D;
         // variables para eventos del form
         const int WM_SYSCOMMAND = 0x112;
@@ -36,6 +36,7 @@ namespace LabCOF
         DataTable Tabla = new DataTable(); //Declaramos una variable de tipo DataTable y a su vez la inicializamos para usarla mas tarde.
         DataRow Renglon;//Esta variable de tipo DataRow solo la declaramos y mas adelante la utilizaremos para agregarsela al dataTable que ya declaramos arriba
         double[] x  = new double[10000];//tiempo
+        //las siguientes variables guardan los 9 posibles datos que llegran desde el arduino o microcontrolador
         double[] y0 = new double[10000];//D6
         double[] y1  = new double[10000];//D1
         double[] y2 = new double[10000];//D2
@@ -45,17 +46,17 @@ namespace LabCOF
         double[] y6 = new double[10000];//D6  
         double[] y7 = new double[10000];//D7
         double[] y8 = new double[10000];//D7
-        //variables de graficas para usar al crear ar4chivo EXCEL
-        double[,] P1G1 = new double[2,10000];
-        double[,] P1G2 = new double[2, 10000];
+        //variables de graficas para usar al crear archivo EXCEL solo se guardaran los datos que se estan observando en el panel maximo 6
+        double[,] P1G1 = new double[2,10000];//pane1 Grafica1 
+        double[,] P1G2 = new double[2, 10000];//panel2 Grafica 2
         double[,] P1G3 = new double[2, 10000];
         double[,] P2G1 = new double[2, 10000];
         double[,] P2G2 = new double[2, 10000];
         double[,] P2G3 = new double[2, 10000];      
         // variables graficas
-        public GraphPane myPane,myPane2;
-        public LineItem myCurve,myCurve2;
-        PointPairList PGraph0;
+        public GraphPane myPane,myPane2;//los 2 paneles de graficado
+        public LineItem myCurve,myCurve2;//2 curvas una para cada panel
+        PointPairList PGraph0;//pares de puntos para cada grafica pueden ser maximo 6 3 por panel de graficado
         PointPairList PGraph1;
         PointPairList PGraph2;
         PointPairList PGraph3;
@@ -78,7 +79,7 @@ namespace LabCOF
             
             button3.Enabled = false;
             zedGraphControl1.Size = new System.Drawing.Size(827, 523);
-            zedGraphControl1.GraphPane.CurveList.Clear();// SE BORRA TODO        
+            zedGraphControl1.GraphPane.CurveList.Clear();// SE BORRA TODO  en el panel 1      
             myPane = zedGraphControl1.GraphPane;
             myPane2 = zedGraphControl2.GraphPane;
             RecargarFondo();
@@ -87,7 +88,7 @@ namespace LabCOF
             if (Properties.Graficos.Default.Panel2Activo)
             {
                 zedGraphControl1.Size = new System.Drawing.Size(827, 262);
-                zedGraphControl2.GraphPane.CurveList.Clear();// SE BORRA TODO  
+                zedGraphControl2.GraphPane.CurveList.Clear();// SE BORRA TODO  en el panel 2 si es que esta activo
                             
             }
            
@@ -103,7 +104,7 @@ namespace LabCOF
 
             //MENSAJE DE ULTIMA CONEXION
             label5.Text = " Ultima conexión a: "; 
-            label3.Text=" ->   "+ Properties.Settings.Default.NombrePuerto;
+            label3.Text=" ->   "+ Properties.Settings.Default.NombrePuerto;// se carga en el label el nombre del ultimo com usado
             label3.ForeColor = Color.Red;
 
             //VARIABLE PARA ACTIVAR EL CAMBIO DE TAMAÑO DE VENTANA
@@ -133,7 +134,7 @@ namespace LabCOF
                     }// ABRE LA CONEXION CON EL PUERTO Y SE CREA UNA EXEPCION
                 catch (System.Exception)// aqui puede declararse una variable string "ex" para usar en el mensaje siguiente
                 {
-                      timer1.Enabled = false;
+                      timer1.Enabled = false;// se desactiva el timer1
                       ErrorDeConexion(); }//SI SE COLOCA "ex.ToString()" Mostrara un cuadro de dialogo normal que muestra el error
             }
         }
@@ -149,12 +150,14 @@ namespace LabCOF
             
             serialPort1.Write(DatoAenviar);   
             // se lee el dato recibido
-            CadenaRs232 = serialPort1.ReadExisting();
+            CadenaRs232 = serialPort1.ReadExisting();serialPort1.ReadLine();
             if (CadenaRs232 == "") { label3.Text = "No Existen Datos En el Puerto"; }// si no lee nada no hara nada hasta que exista alguna cadena que envie el ARDUINO
 
             else
             {
-                try { ParteCadenaOptendato = SENSORES(CadenaRs232); label5.Text = "Conectado a: " + serialPort1.PortName+" . . . " ; label5.ForeColor = Color.Green; label3.Text = ""; }
+                try { ParteCadenaOptendato = SENSORES(CadenaRs232);
+                    label5.Text = "Conectado a: " + serialPort1.PortName+" . . . " ; label5.ForeColor = Color.Green; label3.Text = "";
+                }
                 catch { label3.Text = "Los datos no vienen separados por espacios"; }         
                         //Tiempo
                         double[] XX = new double[i + 1];//tiempo 
@@ -173,58 +176,65 @@ namespace LabCOF
                         double[] XX6 = new double[i + 1]; double[] YY6 = new double[i + 1];
                         double[] XX7 = new double[i + 1]; double[] YY7 = new double[i + 1];
                         double[] XX8 = new double[i + 1]; double[] YY8 = new double[i + 1];
-                       
-                      //se toma el valor correspondiente del vector cadena "PartreCadenaOptendato" se convierte a decimal para poder redondear
-                      // luego se convierte a un double asignandolo a "y#" que es variable global  
-                        try//0
-                        {
-                            E0s = ParteCadenaOptendato[0]; decimal.TryParse(E0s, out E0D); decimal.Round(E0D, 2);
-                            //y0[i] =6.6*(Math.Log( Convert.ToDouble(E0D)))-40;
-                            y0[i] = Convert.ToDouble(E0D);
-                        }
-                        catch { label3.Text = "Error En la entrada 0, no se recibe cadena de numeros."; label3.ForeColor = Color.Red; }//quiere decir que posiblemente hay texto en la cadena y no numeros por eso no se puede redondear ni convertir a decimal
-                        try// 1
+
+                //se toma el valor correspondiente del vector cadena "PartreCadenaOptendato" se convierte a decimal para poder redondear
+                // luego se convierte a un double asignandolo a "y#" que es variable global  
+                try//0
+                {
+                    E0s = ParteCadenaOptendato[0]; decimal.TryParse(E0s, out E0D); decimal.Round(E0D, 2);
+                    //y0[i] =6.6*(Math.Log( Convert.ToDouble(E0D)))-40;
+                    y0[i] = Convert.ToDouble(E0D);
+                }
+                catch {// label3.Text = "Error En la entrada 0, no se recibe cadena de numeros."; label3.ForeColor = Color.Red; }//quiere decir que posiblemente hay texto en la cadena y no numeros por eso no se puede redondear ni convertir a decimal
+                }
+                    try// 1
                         {
                             E1s = ParteCadenaOptendato[1]; decimal.TryParse(E1s, out E1D); decimal.Round(E1D, 2);
                             y1[i] = Convert.ToDouble(E1D);
                             for (int k = 0; k <= i; k++) { YY1[k] = y1[k]; }
                         }
-                        catch { label3.Text = "Error En la entrada 1, no se recibe cadena de numeros."; label3.ForeColor = Color.Red; }
+                        catch { //label3.Text = "Error En la entrada 1, no se recibe cadena de numeros."; label3.ForeColor = Color.Red; 
+                }
                         try // 2
                         {
                             E2s = ParteCadenaOptendato[2]; decimal.TryParse(E2s, out E2D); decimal.Round(E2D, 2);
                             y2[i] = Convert.ToDouble(E2D);
                             for (int k = 0; k <= i; k++) { YY2[k] = y2[k]; }
                         }
-                        catch { label3.Text = "Error En la entrada 2, no se recibe cadena de numeros."; label3.ForeColor = Color.Red; }
+                        catch {// label3.Text = "Error En la entrada 2, no se recibe cadena de numeros."; label3.ForeColor = Color.Red; 
+                }
                         try // 3
                         {
                             E3s = ParteCadenaOptendato[3]; decimal.TryParse(E3s, out E3D); decimal.Round(E3D, 2);
                             y3[i] = Convert.ToDouble(E3D);
                             for (int k = 0; k <= i; k++) { YY3[k] = y3[k]; }
                         }
-                        catch { label3.Text = "Error En la entrada 3, no se recibe cadena de numeros."; label3.ForeColor = Color.Red; }
+                        catch {// label3.Text = "Error En la entrada 3, no se recibe cadena de numeros."; label3.ForeColor = Color.Red;
+                }
                         try// 4
                         {
                             E4s = ParteCadenaOptendato[4]; decimal.TryParse(E4s, out E4D); decimal.Round(E4D, 2);
                             y4[i] = Convert.ToDouble(E4D);
                             for (int k = 0; k <= i; k++) { YY4[k] = y4[k]; }
                         }
-                        catch { label3.Text = "Error En la entrada 4, no se recibe cadena de numeros."; label3.ForeColor = Color.Red; }
+                        catch {// label3.Text = "Error En la entrada 4, no se recibe cadena de numeros."; label3.ForeColor = Color.Red; 
+                }
                         try// 5
                         {
                             E5s = ParteCadenaOptendato[7]; decimal.TryParse(E5s, out E5D); decimal.Round(E5D, 2);
                             y5[i] = Convert.ToDouble(E5D);
                             for (int k = 0; k <= i; k++) { YY5[k] = y5[k]; }
                         }
-                        catch { label3.Text = "Error En la entrada 5, no se recibe cadena de numeros."; label3.ForeColor = Color.Red; }
+                        catch {// label3.Text = "Error En la entrada 5, no se recibe cadena de numeros."; label3.ForeColor = Color.Red; 
+                }
                         try// 6
                         {
                             E6s = ParteCadenaOptendato[6]; decimal.TryParse(E6s, out E6D); decimal.Round(E6D, 2);
                             y6[i] = Convert.ToDouble(E6D);
                             for (int k = 0; k <= i; k++) { YY6[k] = y6[k]; }
                         }
-                        catch { label3.Text = "Error En la entrada 6, no se recibe cadena de numeros."; label3.ForeColor = Color.Red; }
+                        catch {// label3.Text = "Error En la entrada 6, no se recibe cadena de numeros."; label3.ForeColor = Color.Red; 
+                }
 
                         try// 7
                         {
@@ -232,14 +242,16 @@ namespace LabCOF
                             y7[i] = Convert.ToDouble(E7D);
                             for (int k = 0; k <= i; k++) { YY7[k] = y7[k]; }
                         }
-                        catch { label3.Text = "Error En la entrada 7, no se recibe cadena de numeros."; label3.ForeColor = Color.Red; }
+                        catch {// label3.Text = "Error En la entrada 7, no se recibe cadena de numeros."; label3.ForeColor = Color.Red; 
+                }
                         try// 8
                         {
                             E8s = ParteCadenaOptendato[8]; decimal.TryParse(E8s, out E8D); decimal.Round(E8D, 2);
                             y8[i] = Convert.ToDouble(E8D);
                             for (int k = 0; k <= i; k++) { YY8[k] = y8[k]; }
                         }
-                        catch { label3.Text = "Error En la entrada 8, no se recibe cadena de numeros."; label3.ForeColor = Color.Red; }
+                        catch { //label3.Text = "Error En la entrada 8, no se recibe cadena de numeros."; label3.ForeColor = Color.Red;
+                }
 
 
 
@@ -730,6 +742,7 @@ namespace LabCOF
                         i = i + 1; timerReal = i;
                         if (i == Properties.SettingsBluetooth.Default.NumDatos+1) { ParoAutomatico(); }
                         else {  }
+                
             }// fin else cadena no vacia
         }
 
@@ -930,7 +943,9 @@ namespace LabCOF
                 RecargarFondo2();
                
             }   
-        }    
+        }
+
+        
 
         private void ajustesDePuetoCOMToolStripMenuItem_Click(object sender, EventArgs e)
         {        
@@ -1115,17 +1130,55 @@ namespace LabCOF
             }
         }
 
+        private void guardarDatostxtOdatToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            timer1.Enabled = false;
+            serialPort1.Close();
+            label5.Text = "Desconectado de: " + serialPort1.PortName;
+            label5.ForeColor = Color.Red;
+            button2.Text = "Continuar";
+            string renglon = "";
+
+
+            if (i == 0) { MessageBox.Show("Aun no hay Datos para Guardar"); }
+            else
+            {
+
+                if (Properties.Graficos.Default.E5activo)
+                {
+                   
+                    for (int i1 = 0; i1 < i; i1++)
+                    {
+                     //   xlWorkSheet.Cells[i1 + 3, 11] = P2G3[0, i1];
+                       // xlWorkSheet.Cells[i1 + 3, 12] = P2G3[1, i1];
+                    }
+                }
+
+                try
+                {
+                    saveFileDialog1.ShowDialog();
+                   // xlWorkBook.SaveAs(saveFileDialog1.FileName, Excel.XlFileFormat.xlWorkbookNormal, misValue, misValue, misValue, misValue, Excel.XlSaveAsAccessMode.xlExclusive, misValue, misValue, misValue, misValue, misValue);
+                   
+                }
+                //"d:\\csharp-Excel.xls"
+                catch { MessageBox.Show("No se Guardado Ningun Dato"); }
+
+            }
+
+         }
 
         public string[] SENSORES(string cadena)// require de una cadena con espacio al final ("334 4445 444 5.67 ")
         {
             int i, j = 0, k = 0, l = 0;
             // contador de espacios en blanco_________________
+           
             cadena = cadena + " ";
             for (i = 0; i < cadena.Length; i++)
             {
                 if (cadena.Substring(i, 1) == " ") l = l + 1;
             }//_______________________________________________
 
+            
             string[] Datos = new string[l];
             for (i = 0; i < cadena.Length; i++)
             {

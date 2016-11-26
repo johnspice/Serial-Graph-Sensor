@@ -49,6 +49,7 @@
             this.button10 = new System.Windows.Forms.Button();
             this.label9 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.button11 = new System.Windows.Forms.Button();
             this.label13 = new System.Windows.Forms.Label();
             this.button7 = new System.Windows.Forms.Button();
             this.button6 = new System.Windows.Forms.Button();
@@ -106,7 +107,6 @@
             this.label12 = new System.Windows.Forms.Label();
             this.label18 = new System.Windows.Forms.Label();
             this.label20 = new System.Windows.Forms.Label();
-            this.button11 = new System.Windows.Forms.Button();
             this.colorDialogBotX = new System.Windows.Forms.ColorDialog();
             this.groupBox1.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -359,6 +359,17 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Colores";
             // 
+            // button11
+            // 
+            this.button11.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button11.Location = new System.Drawing.Point(216, 36);
+            this.button11.Name = "button11";
+            this.button11.Size = new System.Drawing.Size(24, 23);
+            this.button11.TabIndex = 13;
+            this.button11.Text = "X";
+            this.button11.UseVisualStyleBackColor = true;
+            this.button11.Click += new System.EventHandler(this.button11_Click_1);
+            // 
             // label13
             // 
             this.label13.AutoSize = true;
@@ -607,6 +618,7 @@
             this.groupBox5.TabIndex = 11;
             this.groupBox5.TabStop = false;
             this.groupBox5.Text = "PANEL 1";
+            this.groupBox5.Enter += new System.EventHandler(this.groupBox5_Enter);
             // 
             // groupBox6
             // 
@@ -813,17 +825,6 @@
             this.label20.Size = new System.Drawing.Size(47, 13);
             this.label20.TabIndex = 0;
             this.label20.Text = "Principal";
-            // 
-            // button11
-            // 
-            this.button11.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button11.Location = new System.Drawing.Point(216, 36);
-            this.button11.Name = "button11";
-            this.button11.Size = new System.Drawing.Size(24, 23);
-            this.button11.TabIndex = 13;
-            this.button11.Text = "X";
-            this.button11.UseVisualStyleBackColor = true;
-            this.button11.Click += new System.EventHandler(this.button11_Click_1);
             // 
             // Ajustes_de_Grafico
             // 

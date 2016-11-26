@@ -81,7 +81,7 @@
       <Value Profile="(Default)">Y2</Value>
     </Setting>
     <Setting Name="ColorPunto2" Type="System.Drawing.Color" Scope="User">
-      <Value Profile="(Default)">Black</Value>
+      <Value Profile="(Default)">White</Value>
     </Setting>
     <Setting Name="tituloP2" Type="System.String" Scope="User">
       <Value Profile="(Default)">X VS Y</Value>
@@ -90,7 +90,7 @@
       <Value Profile="(Default)">X</Value>
     </Setting>
     <Setting Name="tituloY22" Type="System.String" Scope="User">
-      <Value Profile="(Default)">Y</Value>
+      <Value Profile="(Default)">Y1</Value>
     </Setting>
     <Setting Name="titutloY222" Type="System.String" Scope="User">
       <Value Profile="(Default)">Y2</Value>

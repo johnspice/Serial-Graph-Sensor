@@ -80,12 +80,6 @@
     <Compile Include="AjustesCom.Designer.cs">
       <DependentUpon>AjustesCom.cs</DependentUpon>
     </Compile>
-    <Compile Include="FactoresProporcion.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FactoresProporcion.Designer.cs">
-      <DependentUpon>FactoresProporcion.cs</DependentUpon>
-    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -115,9 +109,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="AjustesCom.resx">
       <DependentUpon>AjustesCom.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FactoresProporcion.resx">
-      <DependentUpon>FactoresProporcion.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>

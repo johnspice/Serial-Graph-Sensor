@@ -330,9 +330,9 @@ namespace LabCOF
             comboBox1.Text = "Circulo";
 
             textBox11.Text = " X vs Y";
-            textBox10.Text = " X ";
-            textBox9.Text = " Y ";
-            textBox4.Text = " Y2 ";
+            textBox10.Text = "X";
+            textBox9.Text = "Y";
+            textBox4.Text = "Y2";
            
 
             numericUpDown1.Value = Convert.ToDecimal(2);
@@ -370,6 +370,11 @@ namespace LabCOF
         private void radioButton3_CheckedChanged(object sender, EventArgs e)
         {
             textBox12.Enabled = true; textBox13.Enabled = true; textBox14.Enabled = true; textBox15.Enabled = true;
+        }
+
+        private void groupBox5_Enter(object sender, EventArgs e)
+        {
+
         }
 
         private void button11_Click_1(object sender, EventArgs e)

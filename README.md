@@ -2,6 +2,8 @@
 Plot Serial Sensor Arduino visual C# "Visual studio"
 Creado Para el laboratorio de fenómenos colectivos de la facultad de ciencias UNAM.
 
+![GitHub Logo](panel.png)
+
 Este software es una versión para Windows funcional en Xp,win7,win8,win10 quizá en Xp sea necesario instalar .net framework 4.5. 
 Para el guardado en Excel requiere de al menos tener instalado office 2003 o superior. Este proyecto usa las librería “Zedgraph” 
 para los paneles de graficado.
@@ -23,6 +25,11 @@ Los datos se envían ya sea por cable USB-serial o por bluetooth usando los mód
 * Paro automático después de determinados puntos obtenidos, útil para tomar temperaturas o datos por largos tiempos.
 * guardado de datos en Excel, guardado de la imagen del gráfico.
 * visualización de los datos en tiempo real 
+
+### uso del codigo fuente
+    solo descarga el proyecto descomprimelo, el codigo fuente esta dentro de la carpeta "labcof" entra y abrelo con visual studio 2010-2017.  
+### usar el software
+    descargar el proyecto descomprimelo, el programa listo para usar esta en la carpeta "programa" ahi dentro hay un manual que te guiara paso a paso. 
 
   Se anexa un manual rápido en pdf.
 link youtube muestra su funcionamiento

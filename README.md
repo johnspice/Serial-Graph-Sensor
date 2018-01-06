@@ -1,4 +1,4 @@
-# Serial-Graph-Sensor
+# Serial-Graph-Sensor [Windows - Android]
 Plot Serial Sensor Arduino visual C# "Visual studio"
 Creado Para el laboratorio de fenómenos colectivos de la facultad de ciencias UNAM.
 

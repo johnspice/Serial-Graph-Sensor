@@ -3,7 +3,7 @@ Plot Serial Sensor Arduino visual C# "Visual studio"
 Creado Para el laboratorio de fenómenos colectivos de la facultad de ciencias UNAM.
 
 ![GitHub Logo](panel.png)
-
+![GitHub Logo](panel-android.png)
 Este software es una versión para Windows funcional en Xp,win7,win8,win10 quizá en Xp sea necesario instalar .net framework 4.5. 
 Para el guardado en Excel requiere de al menos tener instalado office 2003 o superior. Este proyecto usa las librería “Zedgraph” 
 para los paneles de graficado.

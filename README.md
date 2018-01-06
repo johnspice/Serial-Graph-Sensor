@@ -4,14 +4,14 @@ Creado Para el laboratorio de fenómenos colectivos de la facultad de ciencias U
 
 ![GitHub Logo](panel.png)
 ![GitHub Logo](panel-android.png)
-Este software es una versión para Windows funcional en Xp,win7,win8,win10 quizá en Xp sea necesario instalar .net framework 4.5. 
+Este software es una versión para Windows funcional en Xp,win7,win8,win10 y Android. quizá en Xp sea necesario instalar .net framework 4.5. 
 Para el guardado en Excel requiere de al menos tener instalado office 2003 o superior. Este proyecto usa las librería “Zedgraph” 
 para los paneles de graficado.
 Su objetivo es la recepción y graficado de datos vía serial de un arduino (o microchip) con sensores de temperatura presión, campo 
 magnético etc…  La intención es que se grafique en tiempo real estos datos. Los datos enviados desde el micro controlador ya sea
 arduino o microchip deben venir en una sola cadena separados por espacios. Pueden ser enviados desde 1 hasta 9 datos.
-Ejemplo: “3.45 5.0 4.56 23.45” aquí hay 4 datos  que llamamos E0,E1,E2,E3 etc…. Ha funcionado muy bien para lecturas cada 100ms menos a esto provoca errores.
-Los datos se envían ya sea por cable USB-serial o por bluetooth usando los módulos HC-05 y Hc-06
+Ejemplo: “3.45 5.0 4.56 23.45 ” aquí hay 4 datos  que llamamos E0,E1,E2,E3 etc…. Ha funcionado muy bien para lecturas cada 100ms menos a esto provoca errores.
+Los datos se envían ya sea por cable USB-serial o por bluetooth usando los módulos HC-05 y Hc-06.
 
 ###  ------------  Características de Software   --------------------------------
 * Ajuste de Colores fondo, cuadricula leyendas
@@ -34,4 +34,7 @@ Los datos se envían ya sea por cable USB-serial o por bluetooth usando los mód
   Se anexa un manual rápido en pdf.
 link youtube muestra su funcionamiento
 1. https://www.youtube.com/watch?v=L1fVNvopPco
+
+
+si este software te sirvio, contribuye a mi trabajo adquiriendo la version para Android.
 

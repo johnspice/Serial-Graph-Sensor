@@ -27,7 +27,7 @@ Los datos se envían ya sea por cable USB-serial o por bluetooth usando los mód
 * visualización de los datos en tiempo real 
 
 ### uso del codigo fuente
-    solo descarga el proyecto descomprimelo, el codigo fuente esta dentro de la carpeta "labcof" entra y abrelo con visual studio 2010-2017.  
+    solo descarga el proyecto descomprimelo, el codigo fuente esta dentro de la carpeta "labcof" entra y abrelo con visual studio 2010-2017. si te marca error al compilar, quisa sea necesario que agregues la libreria zedgraph.dll  
 ### usar el software
     descargar el proyecto descomprimelo, el programa listo para usar esta en la carpeta "programa" ahi dentro hay un manual que te guiara paso a paso. 
 
@@ -36,5 +36,5 @@ link youtube muestra su funcionamiento
 1. https://www.youtube.com/watch?v=L1fVNvopPco
 
 
-si este software te sirvio, contribuye a mi trabajo adquiriendo la version para Android.
+si este software te sirvio, contribuye a mi trabajo adquiriendo la version para Android. https://play.google.com/store/apps/details?id=com.troyasoft.pro.serialplot
 

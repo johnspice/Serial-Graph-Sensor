@@ -35,6 +35,7 @@
             this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.guardarDatosExcelToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.guardarImagenToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.guardarDatostxtOdatToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ajustesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ajustesDeGraficoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ajustesDePuetoCOMToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -57,7 +58,6 @@
             this.timer2TiempoReal = new System.Windows.Forms.Timer(this.components);
             this.zedGraphControl2 = new ZedGraph.ZedGraphControl();
             this.textBoxEnvia = new System.Windows.Forms.TextBox();
-            this.guardarDatostxtOdatToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dGVtabla)).BeginInit();
@@ -65,10 +65,6 @@
             // 
             // menuStrip1
             // 
-            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripMenuItem1,
-            this.ajustesToolStripMenuItem,
-            this.acercaDeToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(1020, 24);
@@ -102,6 +98,13 @@
             this.guardarImagenToolStripMenuItem.Size = new System.Drawing.Size(203, 22);
             this.guardarImagenToolStripMenuItem.Text = "Guardar Imagen";
             this.guardarImagenToolStripMenuItem.Click += new System.EventHandler(this.guardarImagenToolStripMenuItem_Click);
+            // 
+            // guardarDatostxtOdatToolStripMenuItem
+            // 
+            this.guardarDatostxtOdatToolStripMenuItem.Name = "guardarDatostxtOdatToolStripMenuItem";
+            this.guardarDatostxtOdatToolStripMenuItem.Size = new System.Drawing.Size(203, 22);
+            this.guardarDatostxtOdatToolStripMenuItem.Text = "Guardar Datos .txt o .dat";
+            this.guardarDatostxtOdatToolStripMenuItem.Click += new System.EventHandler(this.guardarDatostxtOdatToolStripMenuItem_Click);
             // 
             // ajustesToolStripMenuItem
             // 
@@ -341,13 +344,6 @@
             this.textBoxEnvia.TabIndex = 20;
             this.textBoxEnvia.Text = "a";
             // 
-            // guardarDatostxtOdatToolStripMenuItem
-            // 
-            this.guardarDatostxtOdatToolStripMenuItem.Name = "guardarDatostxtOdatToolStripMenuItem";
-            this.guardarDatostxtOdatToolStripMenuItem.Size = new System.Drawing.Size(203, 22);
-            this.guardarDatostxtOdatToolStripMenuItem.Text = "Guardar Datos .txt o .dat";
-            this.guardarDatostxtOdatToolStripMenuItem.Click += new System.EventHandler(this.guardarDatostxtOdatToolStripMenuItem_Click);
-            // 
             // Graficos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -374,7 +370,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "Graficos";
-            this.Text = "Serial Sensor Plot 1.0";
+            this.Text = "Serial Sensor Plot 1.0.1";
             this.Load += new System.EventHandler(this.Graficos_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();

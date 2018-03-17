@@ -150,7 +150,7 @@ namespace LabCOF
             
             serialPort1.Write(DatoAenviar);   
             // se lee el dato recibido
-            CadenaRs232 = serialPort1.ReadExisting();serialPort1.ReadLine();
+            CadenaRs232 = serialPort1.ReadExisting();
             if (CadenaRs232 == "") { label3.Text = "No Existen Datos En el Puerto"; }// si no lee nada no hara nada hasta que exista alguna cadena que envie el ARDUINO
 
             else
@@ -1172,7 +1172,7 @@ namespace LabCOF
             int i, j = 0, k = 0, l = 0;
             // contador de espacios en blanco_________________
            
-            cadena = cadena + " ";
+           
             for (i = 0; i < cadena.Length; i++)
             {
                 if (cadena.Substring(i, 1) == " ") l = l + 1;

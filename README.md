@@ -26,6 +26,12 @@ Los datos se envían ya sea por cable USB-serial o por bluetooth usando los mód
 * guardado de datos en Excel, guardado de la imagen del gráfico.
 * visualización de los datos en tiempo real 
 
+###  ------------  Proximas mejoras   --------------------------------
+* Conexion directa de Arduino por USB-OGT en android
+* mejoras a la intefaz de usuario para windows y android 
+* envio de datos a Server por Post, los datos se enviaran en formato Json desde la app de android.
+ 
+
 ### uso del codigo fuente
     solo descarga el proyecto descomprimelo, el codigo fuente esta dentro de la carpeta "labcof" entra y abrelo con visual studio 2010-2017. si te marca error al compilar, quisa sea necesario que agregues la libreria zedgraph.dll  
 ### usar el software

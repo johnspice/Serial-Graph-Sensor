@@ -1,6 +1,11 @@
 # Serial-Graph-Sensor [Windows - Android]
 Plot Serial Sensor Arduino visual C# "Visual studio"
-Creado Para el laboratorio de fenómenos colectivos de la facultad de ciencias UNAM.
+Creado para liberar servicio social para el laboratorio de fenómenos colectivos de la facultad de ciencias UNAM.
+
+### ------------- proximas Implementaciones .   ---------------------------------------
+- Envio de datos usando cable OGT-USB de "arduino uno" a android
+- Envio de datos a url especificada por POST usando formato JSON
+
 
 ![GitHub Logo](panel.png)
 ![GitHub Logo](panel-android2.png)

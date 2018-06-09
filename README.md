@@ -32,7 +32,7 @@ Los datos se envían ya sea por cable USB-serial o por bluetooth usando los mód
 * visualización de los datos en tiempo real 
 
 ###  ------------  Proximas mejoras   --------------------------------
-* Conexion directa de Arduino por USB-OGT en android
+* Conexion directa de Arduino por USB-OGT en android (ya implementado revisa Manual)
 * mejoras a la intefaz de usuario para windows y android 
 * envio de datos a Server por Post, los datos se enviaran en formato Json desde la app de android.
  

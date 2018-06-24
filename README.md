@@ -5,6 +5,7 @@ Serial Sensor Plot Creado para liberar servicio social para el laboratorio de CO
 
 ![GitHub Logo](panel.png)
 ![GitHub Logo](panel-android2.png)
+![GitHub Logo](usbogt.png)
 Este software es una versión para Windows funcional en Xp,win7,win8,win10 y Android. quizá en Xp sea necesario instalar .net framework 4.5. El código fuente solo esta disponible en c#, para android no esta disponible solo la aplicacion en googleplay.
 
 Para el guardado en Excel requiere de al menos tener instalado office 2003 o superior. Este proyecto usa las librería “Zedgraph” 
@@ -51,7 +52,7 @@ Todo el proceso de configuración para Windows y Android se describe en el Manua
 ### uso del codigo fuente
     solo descarga el proyecto descomprimelo, el codigo fuente esta dentro de la carpeta "labcof" entra y abrelo con visual studio 2010-2017. si te marca error al compilar, quisa sea necesario que agregues la libreria zedgraph.dll al proyecto, la libreria esta dentro de la carpeta bin.  
 ### usar el software
-    descargar el proyecto descomprimelo, el programa listo para usar esta en la carpeta "programa" ahi dentro hay un manual que te guiara paso a paso. 
+    descargar el proyecto descomprimelo, el programa listo para usar esta en la carpeta "Programa Para Windows" ahi dentro hay un manual que te guiara paso a paso. 
  
 link youtube muestra su funcionamiento
 1. https://www.youtube.com/watch?v=L1fVNvopPco

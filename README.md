@@ -41,12 +41,9 @@ Todo el proceso de configuración para Windows y Android se describe en el Manua
 * dos ejes Y1, Y2 (derecho izquierdo) configurables.
 * Paro automático después de determinados puntos obtenidos, útil para tomar temperaturas o datos por largos tiempos.
 * guardado de datos en Excel.
-* conexión de arduino via bluetooth o USB-OGT, la conexion via USB-OGT solo es valida para arduino uno.  
+* conexión de arduino via bluetooth o USB-OTG. se ha probado en arduino one, mega, nano, y para los dispositivos CP210X, CDC, FTDI, PL2303, CH34x, CP2130 SPI-USB. 
 
-###  ------------  Proximas mejoras   --------------------------------
-* Conexión por USB-OGT en Android para los dispositivos CP210X, CDC, FTDI, PL2303, CH34x, CP2130 SPI-USB.
-* mejoras a la intefaz de usuario para windows y android 
-* envio de datos a Server por Post, los datos se enviaran en formato Json desde la app de android.
+
  
 
 ### uso del codigo fuente

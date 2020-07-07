@@ -4,7 +4,7 @@ Serial Sensor Plot Creado para liberar servicio social para el laboratorio de CO
 
 
 ![GitHub Logo](panel.png)
-![GitHub Logo](panel-android2.png)
+![GitHub Logo](graph.png)
 ![GitHub Logo](usbogt.png)
 Este software es una versión para Windows funcional en Xp,win7,win8,win10 y Android. quizá en Xp sea necesario instalar .net framework 4.5. El código fuente solo esta disponible en c#, para android no esta disponible solo la aplicacion en googleplay.
 

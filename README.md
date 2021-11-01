@@ -1,5 +1,5 @@
 # Serial-Graph-Sensor [Windows - Android]
-Serial Sensor Plot Creado para liberar servicio social para el laboratorio de COF de la fc. UNAM.
+Serial Sensor Plot Creado para graficar datos que se reciben por el puerto serie usando el protocolo rs232. en windows y android
 
 
 

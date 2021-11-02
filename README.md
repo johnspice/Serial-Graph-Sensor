@@ -1,4 +1,4 @@
-# Serial-Graph-Sensor [Windows - Android]
+# Serial-Sensor-Plot [Windows - Android]
 Serial Sensor Plot Creado para graficar datos que se reciben por el puerto serie usando el protocolo rs232. en windows y android
 
 
